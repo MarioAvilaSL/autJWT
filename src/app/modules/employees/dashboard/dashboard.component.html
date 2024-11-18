@@ -1,0 +1,25 @@
+<div class="dashboard-container">
+    <h2>Lista de Empleados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.employee_id }}</td>
+          <td>{{ employee.first_name }} {{ employee.last_name }}</td>
+          <td>{{ employee.email }}</td>
+          <td>
+            <button>Editar</button>
+            <button>Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
